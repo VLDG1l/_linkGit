@@ -59,6 +59,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 </script>
 
 <body> 
+  
   <h1> Butoane pentru cookie: </h1>
   
   <button onclick="alertCookie()">
@@ -76,4 +77,5 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
   <div>
     <code id="cookies"></code>
   </div>  
+  
 </body>
