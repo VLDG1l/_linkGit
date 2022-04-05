@@ -42,6 +42,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
   document.cookie = "favorite_task=collect Data"; 
   document.cookie = "name=oeschger; SameSite=None; Secure";
   document.cookie = "favorite_food=tripe; SameSite=None; Secure";
+  document.cookie = "reader=1; SameSite=None; Secure";
   
   function alertCookie() {
     alert(document.cookie); 
@@ -108,6 +109,11 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
   <div>
     <p> All coockies: </p>
     <code id="cookies"></code>
+  </div>  
+  
+   <div>
+    <p> A cookie existance: </p>
+    <code id="a-cookie-existence"></code>
   </div>  
   
   <div>
