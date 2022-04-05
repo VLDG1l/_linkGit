@@ -114,4 +114,5 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
     <p> Specific cookie: </p>
     <code id="a-specific-value-of-the-cookie"></code>
   </div>  
+  
 </body>
