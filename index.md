@@ -57,11 +57,15 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 </script>
 
 <body> 
-  <h1>Butoane pentru cookie: </h1>
+  <h1> Butoane pentru cookie: </h1>
   
   <button onclick="alertCookie()">
-    Show cookies
+    Alert cookies
   </button> 
+  
+  <button onclick="showCookies()">
+    Show cookies
+  </button>
   
   <button onclick="clearOutputCookies()">
     Clear
