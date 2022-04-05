@@ -52,6 +52,25 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
     output.textContent = '> ' + document.cookie
   }
   
+  function checkACookieExists() {
+    if (document.cookie.split(';').some((item) => item.trim().startsWith('reader='))) {
+      const output = document.getElementById('a-cookie-existence')
+      output.textContent = '> The cookie "reader" exists'
+    }
+  }
+  
+  function checkCookieHasASpecificValue() {
+    if (document.cookie.split(';').some((item) => item.includes('reader=1'))) {
+      const output = document.getElementById('a-specific-value-of-the-cookie')
+      output.textContent = '> The cookie "reader" has a value of "1"'
+    }
+  }
+
+  function clearASpecificValueOfTheCookie() {
+    const output = document.getElementById('a-specific-value-of-the-cookie')
+    output.textContent = ''
+  }
+  
   function clearOutputCookies() {
     const output = document.getElementById('cookies')
     output.textContent = ''
@@ -60,7 +79,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 <body> 
   
-  <h1> Butoane pentru cookie: </h1>
+  <h1> Butoane pentru cookies: </h1>
   
   <button onclick="alertCookie()">
     Alert cookies
@@ -74,8 +93,26 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
     Clear
   </button>
   
+  <button onclick="checkACookieExists()">
+    Check a cookie exists
+  </button>
+  
+  <button onclick="checkCookieHasASpecificValue()">
+    Check that a cookie has a specific value
+  </button>
+
+  <button onclick="clearASpecificValueOfTheCookie()">
+    Clear a specific cookie
+  </button>
+  
   <div>
+    <p> All coockies: </p>
     <code id="cookies"></code>
+  </div>  
+  
+  <div>
+    <p> Specific cookie: </p>
+    <code id="a-specific-value-of-the-cookie"></code>
   </div>  
   
 </body>
