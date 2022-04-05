@@ -45,6 +45,11 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
     alert(document.cookie); 
   } 
   
+  function showCookies() {
+    const output = document.getElementById('cookies')
+    output.textContent = '> ' + document.cookie
+  }
+  
   function clearOutputCookies() {
     const output = document.getElementById('cookies')
     output.textContent = ''
